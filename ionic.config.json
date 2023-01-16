@@ -1,0 +1,7 @@
+{
+  "name": "RAI",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
