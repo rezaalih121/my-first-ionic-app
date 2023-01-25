@@ -1,17 +1,37 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
+    <ion-title> Pokemon List </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-list>
+    <ion-accordion-group>
+      <ion-accordion
+        *ngFor="let pokemon of pokemons; let index "
+        value="{{pokemon.id}}"
+      >
+        <ion-item slot="header" color="light">
+          <ion-avatar slot="start">
+            <img [src]="pokemon.sprites.front_default" alt="avatar" />
+          </ion-avatar>
+          <p>{{pokemon.name}}</p>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          <img
+            [src]="pokemon.sprites.front_default"
+            width="100%"
+            alt="{{pokemon.author}}"
+          />
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+          <p><b>Type : </b>{{pokemon.types[0].type.name}}</p>
+          <p><b>Height : </b>{{pokemon.height}}</p>
+          <p><b>Health : </b>{{pokemon.stats[0].base_stat}}</p>
+        </div>
+      </ion-accordion>
+    </ion-accordion-group>
+  </ion-list>
+  <ion-infinite-scroll (ionInfinite)="onIonInfinite($event)">
+    <ion-infinite-scroll-content></ion-infinite-scroll-content>
+  </ion-infinite-scroll>
 </ion-content>
