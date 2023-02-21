@@ -1,0 +1,139 @@
+{
+  "department": [
+    {
+      "id": 1,
+      "title": "Artile111121",
+      "author": "RezaAli111dd",
+      "content": "The last line, [dependencies], is the start of a section for you to list any of your project’s dependencies. In Rust, p"
+    },
+    {
+      "title": "Artile2121",
+      "author": "Ayhamedddddd",
+      "content": "The last line, [dependencies], is the start of a section for you to list any of your project’s dependencies.",
+      "id": 2
+    },
+    {
+      "title": "Artile4",
+      "author": "Ayhame",
+      "content": "The last lineis the start of a section for you to list any of your project’s dependencies. In Rust, packages of code are referred to as crates. We won’t need any other crates for this project, but we will in the first project in Chapter 2, so we’ll use this dependencies section then.",
+      "id": 4
+    }
+  ],
+
+  "city": [
+    {
+      "id": 1,
+      "name": "Nancy",
+      "author": "RezaAli111dd",
+      "department_id": 1
+    },
+    {
+      "id": 2,
+      "name": "Villers-Les-Nancy",
+      "author": "RezaAli111dd",
+      "department_id": 1
+    },
+    {
+      "id": 3,
+      "name": "Jarville-les-nancy",
+      "author": "RezaAli111dd",
+      "department_id": 1
+    },
+    {
+      "id": 3,
+      "name": "Vandourve-les-nancy",
+      "author": "RezaAli111dd",
+      "department_id": 2
+    },
+    {
+      "id": 3,
+      "name": "Maxeville",
+      "author": "RezaAli111dd",
+      "department_id": 2
+    },
+    {
+      "id": 3,
+      "name": "Laxeo",
+      "author": "RezaAli111dd",
+      "department_id": 3
+    }
+  ],
+
+  "Category": [
+    {
+      "id": 1,
+      "name": "Nancy",
+      "author": "RezaAli111dd",
+      "department_id": 1
+    },
+    {
+      "id": 2,
+      "name": "Villers-Les-Nancy",
+      "author": "RezaAli111dd",
+      "department_id": 1
+    },
+    {
+      "id": 3,
+      "name": "Jarville-les-nancy",
+      "author": "RezaAli111dd",
+      "department_id": 1
+    },
+    {
+      "id": 3,
+      "name": "Vandourve-les-nancy",
+      "author": "RezaAli111dd",
+      "department_id": 2
+    },
+    {
+      "id": 3,
+      "name": "Maxeville",
+      "author": "RezaAli111dd",
+      "department_id": 2
+    },
+    {
+      "id": 3,
+      "name": "Laxeo",
+      "author": "RezaAli111dd",
+      "department_id": 3
+    }
+  ],
+
+  "SubCategory": [
+    {
+      "id": 1,
+      "name": "Nancy",
+      "author": "RezaAli111dd",
+      "department_id": 1
+    },
+    {
+      "id": 2,
+      "name": "Villers-Les-Nancy",
+      "author": "RezaAli111dd",
+      "department_id": 1
+    },
+    {
+      "id": 3,
+      "name": "Jarville-les-nancy",
+      "author": "RezaAli111dd",
+      "department_id": 1
+    },
+    {
+      "id": 3,
+      "name": "Vandourve-les-nancy",
+      "author": "RezaAli111dd",
+      "department_id": 2
+    },
+    {
+      "id": 3,
+      "name": "Maxeville",
+      "author": "RezaAli111dd",
+      "department_id": 2
+    },
+    {
+      "id": 3,
+      "name": "Laxeo",
+      "author": "RezaAli111dd",
+      "department_id": 3
+    }
+  ]
+}

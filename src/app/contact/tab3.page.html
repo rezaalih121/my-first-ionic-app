@@ -1,18 +1,24 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title> Contact Us </ion-title>
+    <ion-title> Search </ion-title>
     <app-header></app-header>
   </ion-toolbar>
 </ion-header>
 <ion-content [fullscreen]="true">
   <form [formGroup]="contactForm" (ngSubmit)="submitForm()" novalidate>
-    <ion-item fill="outline" counter="true">
-      <ion-label position="floating" maxlength="70">Nom</ion-label>
-      <ion-input
-        placeholder="Enter your family name here"
-        formControlName="lastName"
-      ></ion-input>
-    </ion-item>
+    <ion-label position="floating" maxlength="70">city</ion-label>
+    <ion-list>
+      <ion-item>
+        <ion-select
+          interface="popover"
+          placeholder="Select a Department"
+          formControlName="department"
+          (click)="loadCities()"
+        >
+          <ion-select-option value="apples">Apples</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
 
     <ion-item fill="outline" counter="true">
       <ion-label position="floating" maxlength="70">Prenome</ion-label>

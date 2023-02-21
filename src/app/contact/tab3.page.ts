@@ -5,6 +5,7 @@ import {
   FormGroup,
   Validators,
 } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tab3',
@@ -16,10 +17,11 @@ export class Tab3Page implements OnInit {
   contactForm!: FormGroup;
   isSubmitted: boolean = false;
 
-  constructor(private formBuilder: FormBuilder) {}
+  constructor(private formBuilder: FormBuilder, private router: Router) {}
 
   ngOnInit() {
     this.contactForm = this.formBuilder.group({
+      //department: new FormControl('', Validators.required),
       lastName: new FormControl('', Validators.required),
       firstName: new FormControl('', Validators.required),
       givenDate: new FormControl('', Validators.required),
@@ -52,5 +54,9 @@ export class Tab3Page implements OnInit {
       return true;
     }
     const fv = this.contactForm.value;
+  }
+
+  loadCities() {
+    console.log('loadCities');
   }
 }
